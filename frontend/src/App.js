@@ -5,7 +5,6 @@ import { EventsPage } from "./pages/Events";
 import { EventDetailsPage } from "./pages/EventDetails";
 import { NewEventPage } from "./pages/NewEvent";
 import { EditEventPage } from "./pages/EditEvent";
-import { useState } from "react";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +27,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  //const [state, setState] = useState({});
   return <RouterProvider router={router} />;
 }
 
