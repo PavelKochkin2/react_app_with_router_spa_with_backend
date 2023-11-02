@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Another Pink Floyd","image":"https://th.bing.com/th/id/R.eaf4e7b1faa86536d3a7a0737d2b6cb8?rik=lT7mGMFQBXSv8A&pid=ImgRaw&r=0","date":"2023-11-02","description":"sadas","id":"d2fc6b65-5d17-4c5f-85d1-454c2a5af47d"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
