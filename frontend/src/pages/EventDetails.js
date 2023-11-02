@@ -2,6 +2,7 @@ import { json, useLoaderData, useParams } from "react-router-dom";
 import EventItem from "../components/EventItem";
 export const EventDetailsPage = () => {
   const data = useLoaderData();
+  debugger;
   console.log(data);
   return (
     <>
@@ -12,8 +13,8 @@ export const EventDetailsPage = () => {
 
 export async function loader({ request, params }) {
   const id = params.id;
-  const response = await fetch("http://localhost:8080/events/" + id);
   debugger;
+  const response = await fetch("http://localhost:8080/events/" + id);
   if (!response.ok) {
     throw json({ message: "Could not load event data", status: 500 });
   }
