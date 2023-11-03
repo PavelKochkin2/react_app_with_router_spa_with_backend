@@ -1,5 +1,6 @@
 import {
   json,
+  redirect,
   useLoaderData,
   useParams,
   useRouteLoaderData,
@@ -22,4 +23,15 @@ export async function loader({ request, params }) {
     throw json({ message: "Could not load event data", status: 500 });
   }
   return response;
+}
+
+export async function deleteEventAction({ request, params }) {
+  const id = params.id;
+  const response = await fetch("http://localhost:8080/events/" + id, {
+    method: request.method,
+  });
+  if (!response.ok) {
+    throw json({ message: "Could not load event data", status: 500 });
+  }
+  return redirect("/events");
 }

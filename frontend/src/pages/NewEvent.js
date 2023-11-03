@@ -13,8 +13,6 @@ export default async function newEventAction({ request, params }) {
     description: data.get("description"),
   };
 
-  debugger;
-
   const response = await fetch("http://localhost:8080/events", {
     method: "POST",
     headers: {
@@ -22,7 +20,6 @@ export default async function newEventAction({ request, params }) {
     },
     body: JSON.stringify(eventFormData),
   });
-
   if (!response.ok) {
     throw json({ message: "Could not create an event", status: 500 });
   }
