@@ -20,6 +20,8 @@ export default async function newEventAction({ request, params }) {
     },
     body: JSON.stringify(eventFormData),
   });
+
+  if (response.code === 422) return response;
   if (!response.ok) {
     throw json({ message: "Could not create an event", status: 500 });
   }
